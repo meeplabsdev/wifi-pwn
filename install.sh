@@ -12,4 +12,4 @@ cd mitmproxy
 uv run mitmproxy --version
 uv build
 cp dist/*.whl docker/
-sudo docker build docker/
+sudo docker build docker/ -t mitm
