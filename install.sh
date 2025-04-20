@@ -2,9 +2,11 @@
 
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y iptables python3-pip python3-venv dnsmasq wget git
-
 curl -LsSf https://astral.sh/uv/install.sh | sh
-curl -LsSf https://get.docker.com | sudo sh
+
+if ! command -v docker >/dev/null 2>&1; then
+  curl -LsSf https://get.docker.com | sudo sh
+fi
 
 git clone https://github.com/meeplabsdev/mitmproxy.git
 cd mitmproxy
