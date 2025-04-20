@@ -13,3 +13,7 @@ uv run mitmproxy --version
 uv build
 cp dist/*.whl docker/
 sudo docker build docker/ -t mitm
+
+cd ~
+wget https://raw.githubusercontent.com/meeplabsdev/wifi-pwn/refs/heads/main/mitmproxy.sh
+wget https://raw.githubusercontent.com/meeplabsdev/wifi-pwn/refs/heads/main/share-wifi.sh
