@@ -1,2 +1,0 @@
-echo The details generated for wireguard are incorrect. You need to change the "Endpoint" to the server IP when importing it.
-sudo docker run --tty -dit -p 8080:8080 -p 8081:8081 -p 51820:51820/udp -v ~/.mitmproxy:/home/mitmproxy/.mitmproxy mitm mitmweb --set ca_basename=Smoothwall --set ca_organization=Smoothwall --set ca_common_name=Smoothwall --set listen_host=0.0.0.0 --set web_host=0.0.0.0 --set mode=wireguard@0.0.0.0:51820
