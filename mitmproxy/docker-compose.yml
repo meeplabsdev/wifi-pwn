@@ -9,7 +9,7 @@ services:
             - 8081:8081
             - 51820:51820/udp
         volumes:
-            - ~/.mitmproxy:/home/mitmproxy/.mitmproxy
+            - ./.mitmproxy:/home/mitmproxy/.mitmproxy
         image: mitm
         command: mitmweb --set ca_basename=Smoothwall --set ca_organization=Smoothwall
             --set ca_common_name=Smoothwall --set listen_host=0.0.0.0 --set
