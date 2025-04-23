@@ -6,7 +6,7 @@ services:
       - TS_HOSTNAME=wifi-pwn
       - TS_EXTRA_ARGS=--advertise-tags=tag:container --advertise-exit-node --ssh
       - TS_STATE_DIR=/var/lib/tailscale
-      - TS_USERSPACE=false
+      - TS_USERSPACE=true
     volumes:
       - ./tailscale/state:/var/lib/tailscale
     devices:
