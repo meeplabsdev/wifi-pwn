@@ -4,7 +4,7 @@ services:
     environment:
       - TS_AUTH_ONCE=true
       - TS_HOSTNAME=wifi-pwn
-      - TS_EXTRA_ARGS=--advertise-tags=tag:container --advertise-exit-node --ssh
+      - TS_EXTRA_ARGS=--advertise-exit-node --ssh
       - TS_STATE_DIR=/var/lib/tailscale
       - TS_USERSPACE=true
     volumes:
